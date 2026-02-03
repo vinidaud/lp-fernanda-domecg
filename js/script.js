@@ -82,27 +82,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     `;
     document.head.appendChild(style);
-});
 
-// ========================================
-// Adicionar link do WhatsApp (substituir pelo número real)
-// ========================================
-const whatsappLinks = document.querySelectorAll('.btn-whatsapp');
-const whatsappUrl = 'https://wa.me/5521967855806?text=Ol%C3%A1%2C%20quero%20mais%20informa%C3%A7%C3%A3o%20sobre%20o%20Minicurso%20Card%C3%A1pio%20Sem%20Drama&utm_source=direto&src=direto%7Cstory_fernanda%7Cstory_fernanda%7C%2Fm6s-a&sck=1759238247058_17592378739444';
+    // ========================================
+    // Adicionar link do WhatsApp
+    // ========================================
+    const whatsappLinks = document.querySelectorAll('.btn-whatsapp');
+    const whatsappUrl = 'https://wa.me/5521967855806?text=Ol%C3%A1%2C%20quero%20mais%20informa%C3%A7%C3%A3o%20sobre%20o%20Minicurso%20Card%C3%A1pio%20Sem%20Drama&utm_source=direto&src=direto%7Cstory_fernanda%7Cstory_fernanda%7C%2Fm6s-a&sck=1759238247058_17592378739444';
 
-whatsappLinks.forEach(link => {
-    link.href = whatsappUrl;
-    link.target = '_blank';
-});
-
-// ========================================
-// Adicionar link de compra (substituir pela URL real)
-// ========================================
-const ctaLinks = document.querySelectorAll('.btn-cta');
-const checkoutUrl = 'https://clkdmg.site/pay/minicurso-cardapio-sem-drama?utm_source=direto&src=direto%7Cstory_fernanda%7Cstory_fernanda%7C%2Fm6s-a&sck=1759238247058_17592378739444';
-
-ctaLinks.forEach(link => {
-    if (!link.getAttribute('href').startsWith('#')) {
-        link.href = checkoutUrl;
-    }
+    whatsappLinks.forEach(link => {
+        link.href = whatsappUrl;
+        link.target = '_blank';
+    });
 });
