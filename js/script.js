@@ -41,6 +41,14 @@ document.addEventListener('DOMContentLoaded', function() {
     document.head.appendChild(style);
 
     // ========================================
+    // Video playback speed
+    // ========================================
+    const video = document.querySelector('.iphone-screen video');
+    if (video) {
+        video.playbackRate = 1.3;
+    }
+
+    // ========================================
     // WhatsApp link
     // ========================================
     const whatsappLinks = document.querySelectorAll('.btn-whatsapp');
