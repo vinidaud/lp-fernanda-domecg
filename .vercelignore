@@ -1,0 +1,8 @@
+*.MOV
+*.mov
+COPY-FERNANDA-DOC.docx
+Gemini_Generated_Image_*
+gemini-foto-certa.png
+*.code-workspace
+.git
+.claude
