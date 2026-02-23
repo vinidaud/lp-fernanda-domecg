@@ -1,5 +1,14 @@
 {
+  "redirects": [
+    { "source": "/m6s/", "destination": "/m6s", "permanent": true },
+    { "source": "/m6s-f/", "destination": "/m6s-f", "permanent": true },
+    { "source": "/m6s-g/", "destination": "/m6s-g", "permanent": true },
+    { "source": "/m6s-h/", "destination": "/m6s-h", "permanent": true }
+  ],
   "rewrites": [
-    { "source": "/m6s", "destination": "/index.html" }
+    { "source": "/m6s", "destination": "/index.html" },
+    { "source": "/m6s-f", "destination": "/m6s-f.html" },
+    { "source": "/m6s-g", "destination": "/m6s-g.html" },
+    { "source": "/m6s-h", "destination": "/m6s-h.html" }
   ]
 }
