@@ -45,7 +45,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // ========================================
     const video = document.querySelector('.iphone-screen video');
     if (video) {
-        video.playbackRate = 1.3;
+        video.playbackRate = 2.0;
+        video.addEventListener('play', function() {
+            this.playbackRate = 2.0;
+        });
+        video.addEventListener('loadeddata', function() {
+            this.playbackRate = 2.0;
+        });
     }
 
     // ========================================
